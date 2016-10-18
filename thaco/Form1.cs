@@ -276,6 +276,7 @@ namespace THACO
                         results = new Results(NSX);
                         results.updatevitri();
                         DatNgay();
+                        updateData();
                     }
 
                     List<SPKetQuaNgay> list = results.getList(results.NgaySX);
@@ -288,8 +289,9 @@ namespace THACO
                         }
                         updateData();
                         is_push = true;
-                    }
-                    setStatus(true, "OK!"); 
+                        setStatus(true, "123OK!"); 
+                    }else
+                    setStatus(true, "KO!"); 
                       
                 }
                 catch
