@@ -35,7 +35,7 @@ namespace THACO
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            checkConnectComPort();
+            //checkConnectComPort();
             if (checkConnectDatabase())
             {
                 if (removedTab != null)
@@ -60,26 +60,26 @@ namespace THACO
                 radioButton1.Checked = true;
         }
 
-        public void checkConnectComPort()
-        {
-            if (!COM.IsOpen)
-            {
-                string[] ports = SerialPort.GetPortNames();
-                LISTCOM.Items.AddRange(ports);
-                LISTCOM.Text = "COM3";
-                COM.PortName = LISTCOM.Text;
-                try
-                {
-                   COM.Open();
-                }
-                catch
-                {
-                    MessageBox.Show("Can't connect to COM port! Please check connection again!", "Alert"
-                                     , MessageBoxButtons.OK, MessageBoxIcon.Question);
-                    Environment.Exit(0);
-                }
-            }            
-        }
+        //public void checkConnectComPort()
+        //{
+        //    if (!COM.IsOpen)
+        //    {
+        //        string[] ports = SerialPort.GetPortNames();
+        //        LISTCOM.Items.AddRange(ports);
+        //        LISTCOM.Text = "COM3";
+        //        COM.PortName = LISTCOM.Text;
+        //        try
+        //        {
+        //           COM.Open();
+        //        }
+        //        catch
+        //        {
+        //            MessageBox.Show("Can't connect to COM port! Please check connection again!", "Alert"
+        //                             , MessageBoxButtons.OK, MessageBoxIcon.Question);
+        //            Environment.Exit(0);
+        //        }
+        //    }            
+        //}
 
         public void loadData()
         {
@@ -90,11 +90,11 @@ namespace THACO
             //CB_SP5.Enabled = false;
             //CB_SP6.Enabled = false;
             //CB_SP7.Enabled = false;
-            TIMER1.Enabled = true;
+            //TIMER1.Enabled = true;
             TIMER2.Enabled = true;
             TIMER3.Enabled = true;
-            TIMER4.Enabled = true;
-            BT_CONNECT.Text = "NGẮT KẾT NỐI";
+           // TIMER4.Enabled = true;
+            //BT_CONNECT.Text = "NGẮT KẾT NỐI";
 
             CB_SP1.Text = "                    "; CB_SP2.Text = "                    "; CB_SP3.Text = "                    "; CB_SP4.Text = "                    "; 
             TB_THN1.Text = "0"; TB_THN2.Text = "0"; TB_THN3.Text = "0"; TB_THN4.Text = "0";  TB_TTHN.Text = "0";
@@ -241,7 +241,7 @@ namespace THACO
                 */
             if (is_push)
             {
-
+                setStatus(true, "Push"); 
                 //TB_TIME.Text = DateTime.Now.Hour + " : " + DateTime.Now.Minute + " : " + DateTime.Now.Second;
                 //if (CB_SP1.Text == "                    ") { TB_THN1.Text = "0"; TB_KHN1.Text = "0"; TB_THT1.Text = "0"; TB_KHT1.Text = "0"; }
                 //if (CB_SP2.Text == "                    ") { TB_THN2.Text = "0"; TB_KHN2.Text = "0"; TB_THT2.Text = "0"; TB_KHT2.Text = "0"; }
@@ -289,7 +289,8 @@ namespace THACO
                         updateData();
                         is_push = true;
                     }
-                     setStatus(true, "OK");   
+                    setStatus(true, "OK!"); 
+                      
                 }
                 catch
                 {

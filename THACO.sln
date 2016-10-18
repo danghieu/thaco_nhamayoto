@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THACO", "THACO\THACO.csproj", "{73999BB4-07C1-4FDC-AD1F-C3405BDEA0E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THACO2", "thaco\THACO2.csproj", "{73999BB4-07C1-4FDC-AD1F-C3405BDEA0E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -41,8 +41,6 @@
             this.TB_TenLoaiSP3 = new System.Windows.Forms.TextBox();
             this.TB_TenLoaiSP2 = new System.Windows.Forms.TextBox();
             this.TB_TenLoaiSP1 = new System.Windows.Forms.TextBox();
-            this.BT_CONNECT = new System.Windows.Forms.Button();
-            this.LISTCOM = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -123,8 +121,6 @@
             this.tabPage1.Controls.Add(this.TB_TenLoaiSP3);
             this.tabPage1.Controls.Add(this.TB_TenLoaiSP2);
             this.tabPage1.Controls.Add(this.TB_TenLoaiSP1);
-            this.tabPage1.Controls.Add(this.BT_CONNECT);
-            this.tabPage1.Controls.Add(this.LISTCOM);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
@@ -163,7 +159,7 @@
             this.LB_DBStatus.AutoSize = true;
             this.LB_DBStatus.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_DBStatus.ForeColor = System.Drawing.Color.Maroon;
-            this.LB_DBStatus.Location = new System.Drawing.Point(106, 393);
+            this.LB_DBStatus.Location = new System.Drawing.Point(263, 371);
             this.LB_DBStatus.Name = "LB_DBStatus";
             this.LB_DBStatus.Size = new System.Drawing.Size(53, 17);
             this.LB_DBStatus.TabIndex = 147;
@@ -174,7 +170,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Maroon;
-            this.label12.Location = new System.Drawing.Point(32, 393);
+            this.label12.Location = new System.Drawing.Point(189, 371);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 17);
             this.label12.TabIndex = 146;
@@ -226,26 +222,6 @@
             this.TB_TenLoaiSP1.Size = new System.Drawing.Size(100, 23);
             this.TB_TenLoaiSP1.TabIndex = 141;
             this.TB_TenLoaiSP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // BT_CONNECT
-            // 
-            this.BT_CONNECT.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_CONNECT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BT_CONNECT.Location = new System.Drawing.Point(390, 368);
-            this.BT_CONNECT.Name = "BT_CONNECT";
-            this.BT_CONNECT.Size = new System.Drawing.Size(206, 24);
-            this.BT_CONNECT.TabIndex = 140;
-            this.BT_CONNECT.Text = "KẾT NỐI";
-            this.BT_CONNECT.UseVisualStyleBackColor = true;
-            // 
-            // LISTCOM
-            // 
-            this.LISTCOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LISTCOM.FormattingEnabled = true;
-            this.LISTCOM.Location = new System.Drawing.Point(178, 368);
-            this.LISTCOM.Name = "LISTCOM";
-            this.LISTCOM.Size = new System.Drawing.Size(206, 24);
-            this.LISTCOM.TabIndex = 139;
             // 
             // label9
             // 
@@ -634,7 +610,7 @@
             // 
             // TIMER3
             // 
-            this.TIMER3.Interval = 5000;
+            this.TIMER3.Interval = 8000;
             this.TIMER3.Tick += new System.EventHandler(this.TIMER3_Tick);
             // 
             // TIMER4
@@ -714,8 +690,6 @@
         private System.Windows.Forms.TextBox TB_TenLoaiSP3;
         private System.Windows.Forms.TextBox TB_TenLoaiSP2;
         private System.Windows.Forms.TextBox TB_TenLoaiSP1;
-        private System.Windows.Forms.Button BT_CONNECT;
-        private System.Windows.Forms.ComboBox LISTCOM;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

@@ -1,0 +1,11 @@
+D:\HMI\Hieu\thaco_nhamayoto\thaco\bin\Release\THACO.exe.config
+D:\HMI\Hieu\thaco_nhamayoto\thaco\obj\x86\Release\THACO.exe
+D:\HMI\Hieu\thaco_nhamayoto\thaco\obj\x86\Release\THACO.pdb
+D:\HMI\Hieu\thaco_nhamayoto\thaco\bin\Release\THACO.exe
+D:\HMI\Hieu\thaco_nhamayoto\thaco\bin\Release\THACO.pdb
+D:\HMI\Hieu\thaco_nhamayoto\thaco\obj\x86\Release\ResolveAssemblyReference.cache
+D:\HMI\Hieu\thaco_nhamayoto\thaco\obj\x86\Release\THACO.Form1.resources
+D:\HMI\Hieu\thaco_nhamayoto\thaco\obj\x86\Release\THACO.Form2.resources
+D:\HMI\Hieu\thaco_nhamayoto\thaco\obj\x86\Release\THACO.Properties.Resources.resources
+D:\HMI\Hieu\thaco_nhamayoto\thaco\obj\x86\Release\GenerateResource.read.1.tlog
+D:\HMI\Hieu\thaco_nhamayoto\thaco\obj\x86\Release\GenerateResource.write.1.tlog

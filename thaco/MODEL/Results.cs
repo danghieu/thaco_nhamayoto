@@ -90,9 +90,9 @@ namespace THACO.MODE
             var listOrigin = list;
             KQNOrigin = listOrigin;
             if (list.Count < socbbsp)
-               list.Insert(0, new SPKetQuaNgay() { TenSanPham = "                    " });
+               list.Insert(0, new SPKetQuaNgay() { TenSanPham = "                    ", TenLoaiSP = " ", ThucHienNgay  =  0, KeHoachNgay = 0});
             if (list == null) throw new ArgumentNullException(); if (list == null) throw new ArgumentNullException();
-            KQN = list;      
+            KQN = list;       
             return list;
         }
 
@@ -114,9 +114,6 @@ namespace THACO.MODE
 
             for (int i = 0; i < KQNOrigin.Count - 1; i++) 
             {
-                //if (SPKQN.ElementAt(i).T != KQNOrigin.ElementAt(i + 1).ThucHienNgay)
-                //    return true;
-
                 if (!SPKQN.ElementAt(i).ThucHienNgay.Equals(KQNOrigin.ElementAt(i+ count).ThucHienNgay))
                     return true;
 
