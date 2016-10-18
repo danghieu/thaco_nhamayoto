@@ -113,6 +113,12 @@ namespace THACO.MODE
 
             for (int i = 0; i < SPKQN.Count - 1; i++) 
             {
+                if (!SPKQN.ElementAt(i).TenSanPham.Equals(KQNOrigin.ElementAt(i + count).TenSanPham))
+                    return true;
+
+                if (!SPKQN.ElementAt(i).TenLoaiSP.Equals(KQNOrigin.ElementAt(i + count).TenLoaiSP))
+                    return true;
+
                 if (!SPKQN.ElementAt(i).ThucHienNgay.Equals(KQNOrigin.ElementAt(i+ count).ThucHienNgay))
                     return true;
 
